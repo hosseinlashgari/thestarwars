@@ -1,0 +1,94 @@
+/* فونت مورد استفاده در کل سایت مشخص شده است */
+* {
+    font-family:'Times New Roman', Times, serif;
+}
+
+/* آدرس پس زمینه مشخص شده است. در صورتی که پس زمینه بارگذاری نشود رنگ مشخص شده نشان داده می شود.
+fixed: این مقدار برای اسکرول نشدن پس زمینه در صورت بزرگتر بودن سایز آن است
+center center: این مقدار مشخص می کند اگر پس زمینه بزرگتر بود دقیقا وسط آن نشان داده شود. */
+body {
+    background-image: url("1500x1000.jpg");
+    background-color: #830000;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+/* این آی دی مربوط به تنها المنت داخل بادی است.
+طول و عرض این المنت به اندازه محتویات مشخص شده است.
+position: این  مقدار به همراه مقادیر زیرین برای قرار گرفتن المنت دقیقا در وسط بادی است.
+padding: مقدار 0.5 مشخص شده که متناسب با سایز فونت است
+در ادامه سایز و استایل بردر مشخص شده است.
+ */
+#main_content {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: +50%;
+    left: +50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5em;
+    border-style: dashed;
+    border-color: rgb(255, 255, 255);
+    border-width: 2px;
+    border-radius: 16px;
+    background-color: #b10f6865;
+}
+
+/* این کلاس مربوط به استایل دکمه های نمایش کشتی در صفحه فیلم ها است.
+transition-duration: این مقدار زمان تغییر حالت هنگام اتفاق یک ایونت مانند قرارگرفتن موس روی المنت است
+border-radius: گوشه های بردر را به اندازه 16 پیکس کج می کند
+background-color: این مقدار رنگ پس زمینه را حذف و المنت را شفاف می کند تا پس زمینه والد نشان داده شود
+display: این مقدار مشخص می کند المنت در هر خط به صورت یک بلاک است.
+position: این مقدار المنت را به اندازه 3 برابر جایگاه خودش به سمت راست می برد و به المنت جد خود می چسباند.  */
+.starships_button {
+    font-size: large;
+    transition-duration: 0.4s;
+    border-radius: 16px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    display: inline-block;
+    position: sticky;
+    left: +300%;
+}
+
+/* این سودوکلاس استایل المنت را موقع قرار گرفتن موس روی آن مشخص می کند */
+.starships_button:hover {
+    background-color: rgba(255, 0, 0, 0.815);
+    color: white;
+}
+
+/* مشابه عملکرد دکمه های قبلی با تغییرات جزئی */
+.starships_detail_button {
+    font-size: large;
+    transition-duration: 0.4s;
+    border-radius: 16px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.starships_detail_button:hover {
+    background-color: rgba(0, 0, 0, 0.815);
+    color: white;
+}
+
+/* مشابه عملکرد دکمه های قبلی با تغییرات جزئی */
+.control_button {
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    color: black;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.control_button:hover {
+    background-color: rgba(0, 0, 0, 0.815);
+    color: white;
+}
+
+/* سایز فونت را بزرگ می کند */
+span, li {
+    font-size: large;
+}
